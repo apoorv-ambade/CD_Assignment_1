@@ -15,6 +15,6 @@ For question 2 & 3:
 3. ./lexer "inputfile.c"
 
 
-For question 2: example.c
+For question 2 input file: example.c
 
-For question 3: example1.c
+For question 3 input file: example1.c
