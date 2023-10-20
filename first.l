@@ -15,38 +15,7 @@ COMMENT     "\\/\\/"[^\n]*|\\"\\/\\*.*\\*\\/"
 {DIGIT}+    { printf("Found a number: %s\n", yytext); }
 {KEYWORD}   { printf("Found keyword: %s\n", yytext); }
 {ID}        { printf("Found an identifier: %s\n", yytext); }
-"=="        { printf("Found operator '=='\n"); }
-"!="        { printf("Found operator '!='\n"); }
-"<="        { printf("Found operator '<='\n"); }
-">="        { printf("Found operator '>='\n"); }
-"&&"        { printf("Found operator '&&'\n"); }
-"||"        { printf("Found operator '||'\n"); }
-"++"        { printf("Found operator '++'\n"); }
-"--"        { printf("Found operator '--'\n"); }
-"<"         { printf("Found operator '<'\n"); }
-">"         { printf("Found operator '>'\n"); }
-"&"         { printf("Found operator '&'\n"); }
-"|"         { printf("Found operator '|'\n"); }
-"^"         { printf("Found operator '^'\n"); }
-"~"         { printf("Found operator '~'\n"); }
-"!"         { printf("Found operator '!'\n"); }
-"+"         { printf("Found operator '+'\n"); }
-"-"         { printf("Found operator '-'\n"); }
-"*"         { printf("Found operator '*'\n"); }
-"/"         { printf("Found operator '/'\n"); }
-"%"         { printf("Found operator '%%'\n"); }  /* Modulo Operator */
-"="         { printf("Found operator '='\n"); }
-"+="        { printf("Found operator '+='\n"); }
-"-="        { printf("Found operator '-='\n"); }
-"*="        { printf("Found operator '*='\n"); }
-"/="        { printf("Found operator '/='\n"); }
-"%="        { printf("Found operator '%%='\n"); }
-"("         { printf("Found symbol '('\n"); }
-")"         { printf("Found symbol ')'\n"); }
-"{"         { printf("Found symbol '{'\n"); }
-"}"         { printf("Found symbol '}'\n"); }
-";"         { printf("Found symbol ';'\n"); }
-","         { printf("Found symbol ','\n"); }
+
 {COMMENT}   { /* Ignore comments */ }
 {WS}        { /* Ignore whitespace */ }
 .           { printf("Unexpected character: %s\n", yytext); }
